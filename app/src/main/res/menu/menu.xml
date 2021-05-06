@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/usd_rate"
+        android:title="Dollar Rate"
+        android:icon="@drawable/ic_dollar"/>
+
+
+    <item android:id="@+id/placeholder"
+        android:title=""/>
+
+
+    <item android:id="@+id/euro_rate"
+        android:title="Euro Rate"
+        android:icon="@drawable/ic_euro"/>
+
+
+</menu>

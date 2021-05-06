@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EuroRate">
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#083C95">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Euro Rate"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_marginBottom="65dp"
+        android:divider="@null"
+        android:layout_below="@+id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewForEUR"/>
+
+    <include layout="@layout/layout_bottom_app_bar"/>
+
+</RelativeLayout>

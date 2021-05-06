@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFA200">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="International Converter"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_background_for_currency_boxes">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/fromTextCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="1"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardElevation="1dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="#DDDCDC">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_import_export"
+            app:tint="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_background_for_currency_boxes">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/toTxtCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text=""
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
